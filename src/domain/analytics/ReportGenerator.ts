@@ -1,0 +1,1 @@
+import { MarketTrend } from './MarketTrend'; export class ReportGenerator { generate(data: MarketTrend[]): string { return `Compiled report for ${data.length} trends.`; } }

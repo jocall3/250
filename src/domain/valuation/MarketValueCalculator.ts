@@ -1,0 +1,1 @@
+export class MarketValueCalculator { calculate(baseValue: number, volatility: number): number { return baseValue * (1 + volatility); } }

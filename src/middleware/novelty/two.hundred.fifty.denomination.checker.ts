@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const twoHundredFiftyDenominationChecker = (req: Request, res: Response, next: NextFunction) => { if (req.body.amount !== 250) return res.status(400).json({ error: 'Invalid denomination: Must be exactly $250.' }); next(); };

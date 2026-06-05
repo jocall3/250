@@ -1,0 +1,1 @@
+export interface SecurityFeature { billId: string; microprintingCoordinates: string; infraredInkPattern: string; watermarkHash: string; encryptedMetadata: string; }

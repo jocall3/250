@@ -1,0 +1,1 @@
+export interface LiquidityPool { poolId: string; totalLiquidity: number; reserveRatio: number; }

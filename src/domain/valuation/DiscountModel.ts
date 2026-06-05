@@ -1,0 +1,1 @@
+export class DiscountModel { calculateDamageDiscount(damageLevel: number): number { return damageLevel * 0.1; } }

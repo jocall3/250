@@ -1,0 +1,1 @@
+export class DataExport { constructor(public readonly exportId: string, public readonly format: 'CSV' | 'JSON') {} public secureExtract(data: any): string { return JSON.stringify(data); } }

@@ -1,0 +1,1 @@
+export const adaptThirdPartyError = (err: any) => { if (err.isAxiosError) { return { message: 'External service failure', status: err.response?.status || 502 }; } return err; };

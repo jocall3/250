@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const globalExceptionFilter = (err: any, req: Request, res: Response, next: NextFunction) => { console.error('Unhandled Exception:', err); res.status(err.statusCode || 500).json({ success: false, message: err.message || 'Internal Server Error' }); };

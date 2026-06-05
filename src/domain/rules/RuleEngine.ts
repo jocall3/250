@@ -1,0 +1,1 @@
+import { RuleEvaluator } from './RuleEvaluator'; import { RuleRegistry } from './RuleRegistry'; export class RuleEngine { constructor(private registry: RuleRegistry, private evaluator: RuleEvaluator) {} async execute(ruleSetId: string, context: any): Promise<any> { const ruleSet = this.registry.get(ruleSetId); return this.evaluator.evaluate(ruleSet, context); } }

@@ -1,0 +1,1 @@
+export const terminateFatalProcess = (err: Error) => { console.error('CRITICAL: Executing emergency shutdown', err); // Logic for memory dump or alert firing would go here process.exit(1); };

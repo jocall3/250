@@ -1,0 +1,1 @@
+import { RuleContext } from './RuleContext'; import { RuleResult } from './RuleResult'; export interface IRule { id: string; evaluate(context: RuleContext): Promise<RuleResult>; }

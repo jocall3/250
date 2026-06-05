@@ -1,0 +1,1 @@
+CREATE TABLE bill_ledger (serial_number VARCHAR(64) PRIMARY KEY, batch_code VARCHAR(32), plate_id VARCHAR(32), signature TEXT, status VARCHAR(16), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP); CREATE INDEX idx_batch ON bill_ledger(batch_code);

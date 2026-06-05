@@ -1,0 +1,1 @@
+import { ITransferRule, TransferContext } from '../../types'; export class TransferFeePaidRule implements ITransferRule { async evaluate(context: TransferContext): Promise<boolean> { if (!context.transaction.feePaid) { throw new Error('Transfer fee has not been paid.'); } return true; } }

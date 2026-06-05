@@ -1,0 +1,1 @@
+export class CollectorDemographics { constructor(public readonly region: string, public readonly ageGroup: string, public readonly interestLevel: number) {} }

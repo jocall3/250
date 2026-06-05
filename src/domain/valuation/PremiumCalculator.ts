@@ -1,0 +1,1 @@
+export class PremiumCalculator { calculateRarityPremium(serialNumber: string): number { return serialNumber === '0001' ? 5000 : 0; } }

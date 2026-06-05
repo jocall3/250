@@ -1,0 +1,1 @@
+export class RuleException extends Error { constructor(public readonly ruleId: string, message: string) { super(message); this.name = 'RuleException'; } }

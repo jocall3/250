@@ -1,0 +1,1 @@
+export interface BillVerificationRequest { billSerialNumber: string; securityFeatureHash: string; timestamp: string; originTerminalId: string; }

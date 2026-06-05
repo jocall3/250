@@ -1,0 +1,1 @@
+import * as crypto from 'crypto'; export class SerialNumberValidator { private static ledger = new Set<string>(); static validate(serial: string): boolean { if (this.ledger.has(serial)) return false; this.ledger.add(serial); return true; } }

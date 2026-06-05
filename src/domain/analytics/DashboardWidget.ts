@@ -1,0 +1,1 @@
+export class DashboardWidget { constructor(public readonly widgetId: string, public readonly type: 'chart' | 'table' | 'gauge', public readonly config: object) {} }

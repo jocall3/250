@@ -1,0 +1,1 @@
+import https from 'https'; import fs from 'fs'; export const getMtlsAgent = () => new https.Agent({ cert: fs.readFileSync('client.crt'), key: fs.readFileSync('client.key'), ca: fs.readFileSync('ca.crt'), rejectUnauthorized: true });

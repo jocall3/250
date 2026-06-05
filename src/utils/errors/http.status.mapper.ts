@@ -1,0 +1,1 @@
+export const mapToHttpStatus = (errorCode: string): number => { const map: Record<string, number> = { 'AUTH_REQUIRED': 401, 'FORBIDDEN': 403, 'NOT_FOUND': 404, 'VALIDATION_FAILED': 400 }; return map[errorCode] || 500; };

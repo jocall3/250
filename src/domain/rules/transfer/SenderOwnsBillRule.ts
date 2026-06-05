@@ -1,0 +1,1 @@
+import { ITransferRule, TransferContext } from '../../types'; export class SenderOwnsBillRule implements ITransferRule { async evaluate(context: TransferContext): Promise<boolean> { if (context.bill.ownerId !== context.sender.id) { throw new Error('Sender does not own the bill.'); } return true; } }

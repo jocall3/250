@@ -1,0 +1,1 @@
+import axios from 'axios'; export class UsMintCommemorativeClient { private client = axios.create({ baseURL: 'https://mint.gov/api' }); async syncReleaseSchedule(billBatchId: string, coinSeriesId: string) { return this.client.post('/sync', { billBatchId, coinSeriesId }); } }

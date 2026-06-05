@@ -1,0 +1,1 @@
+export class BillRepository { async findBySerial(serial: string) { /* Query logic with index optimization */ } async registerBill(bill: any) { /* Insert logic */ } async updateStatus(serial: string, status: string) { /* Update logic */ } }

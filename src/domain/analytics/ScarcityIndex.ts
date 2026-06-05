@@ -1,0 +1,1 @@
+export class ScarcityIndex { constructor(public readonly id: string, public readonly totalCirculation: number, public readonly rarityScore: number) {} }

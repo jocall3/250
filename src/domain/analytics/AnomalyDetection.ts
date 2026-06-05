@@ -1,0 +1,1 @@
+export class AnomalyDetection { flag(dataPoint: number): boolean { return dataPoint > 10000; } }

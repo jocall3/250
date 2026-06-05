@@ -1,0 +1,1 @@
+export const applyThemeToDocument = (mode: 'light' | 'dark', color: string) => { document.documentElement.setAttribute('data-theme', mode); document.documentElement.style.setProperty('--primary-color', color); };

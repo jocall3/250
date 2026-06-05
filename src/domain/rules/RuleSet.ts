@@ -1,0 +1,1 @@
+import { IRule } from './IRule'; export class RuleSet { constructor(public readonly id: string, public readonly rules: IRule[]) {} }

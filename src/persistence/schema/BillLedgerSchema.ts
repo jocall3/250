@@ -1,0 +1,1 @@
+export interface BillLedger { serialNumber: string; batchCode: string; plateIdentifier: string; cryptographicSignature: string; createdAt: Date; status: 'ACTIVE' | 'RETIRED' | 'VOID'; }

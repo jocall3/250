@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const trumpTowerGeoFencer = (req: Request, res: Response, next: NextFunction) => { const { lat, lng } = req.body; const isNearTower = lat > 40.76 && lng > -73.97; if (!isNearTower) return res.status(403).json({ error: 'Location restricted: Must be at Trump Tower.' }); next(); };

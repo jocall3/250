@@ -1,0 +1,1 @@
+export interface HistoricalPriceData { assetId: string; timestamp: Date; price: number; }

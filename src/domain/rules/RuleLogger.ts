@@ -1,0 +1,1 @@
+import { RuleResult } from './RuleResult'; export class RuleLogger { log(result: RuleResult): void { console.log(`[RuleAudit] Rule: ${result.ruleId} | Success: ${result.success} | Msg: ${result.message}`); } }

@@ -1,0 +1,1 @@
+import { IRule } from './IRule'; export class RuleDependencyGraph { resolveOrder(rules: IRule[]): IRule[] { return [...rules].sort((a, b) => 0); } }

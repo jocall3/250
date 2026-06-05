@@ -1,0 +1,1 @@
+import express from 'express'; import rateLimit from 'express-rate-limit'; export const router = express.Router(); const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }); router.use(limiter); router.post('/verify', (req, res) => { res.status(200).json({ status: 'routing' }); });

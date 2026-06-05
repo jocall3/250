@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const validationErrorHandler = (err: any, req: Request, res: Response, next: NextFunction) => { if (err.isJoi || err.name === 'ZodError') { return res.status(400).json({ success: false, errors: err.details || err.issues }); } next(err); };

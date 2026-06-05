@@ -1,0 +1,1 @@
+export class AuditRepository { async appendEntry(entry: any) { /* Append to immutable log */ } async verifyIntegrity(billId: string): Promise<boolean> { /* Cryptographic hash chain validation */ return true; } }

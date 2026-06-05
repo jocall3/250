@@ -1,0 +1,1 @@
+export interface AuditTrail { id: string; billId: string; eventType: 'TRANSFER' | 'VERIFICATION' | 'STATUS_CHANGE'; previousHash: string; currentHash: string; timestamp: Date; actorId: string; }

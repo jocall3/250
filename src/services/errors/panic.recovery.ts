@@ -1,0 +1,1 @@
+export const initPanicRecovery = () => { process.on('uncaughtException', (err) => { console.error('FATAL: Uncaught Exception', err); process.exit(1); }); process.on('unhandledRejection', (reason) => { console.error('FATAL: Unhandled Rejection', reason); process.exit(1); }); };

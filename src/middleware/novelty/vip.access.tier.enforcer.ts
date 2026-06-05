@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const vipAccessTierEnforcer = (req: Request, res: Response, next: NextFunction) => { const hasBill = req.headers['x-bill-verified'] === 'true'; if (!hasBill) return res.status(401).json({ error: 'Access denied: Requires verified $250 bill.' }); next(); };

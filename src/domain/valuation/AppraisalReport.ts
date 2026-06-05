@@ -1,0 +1,1 @@
+export interface AppraisalReport { id: string; appraiserName: string; valuationDate: Date; appraisedValue: number; }

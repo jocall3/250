@@ -1,0 +1,1 @@
+export class ExclusiveClubMembershipLogger { static logEntry(userId: string) { console.log(`User ${userId} entered the $250 Bill Holders Club.`); } static logExit(userId: string) { console.log(`User ${userId} exited the $250 Bill Holders Club.`); } }

@@ -1,0 +1,1 @@
+export interface RuleResult { success: boolean; ruleId: string; message?: string; violations?: string[]; }

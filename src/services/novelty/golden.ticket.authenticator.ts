@@ -1,0 +1,1 @@
+export class GoldenTicketAuthenticator { static isGolden(serial: string): boolean { return serial.startsWith('GOLD-'); } static getBonusMultiplier(): number { return 10.0; } }

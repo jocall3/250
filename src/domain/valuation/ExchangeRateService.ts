@@ -1,0 +1,1 @@
+export class ExchangeRateService { convert(amount: number, targetCurrency: string): number { return amount * 1.05; } }

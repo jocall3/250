@@ -1,0 +1,1 @@
+export class PredictiveModel { constructor(public readonly modelId: string, public readonly accuracy: number) {} public forecast(currentValue: number): number { return currentValue * 1.05; } }

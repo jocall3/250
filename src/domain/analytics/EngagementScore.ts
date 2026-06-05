@@ -1,0 +1,1 @@
+export class EngagementScore { constructor(public readonly score: number, public readonly interactionCount: number) {} }

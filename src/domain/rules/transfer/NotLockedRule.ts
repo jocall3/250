@@ -1,0 +1,1 @@
+import { ITransferRule, TransferContext } from '../../types'; export class NotLockedRule implements ITransferRule { async evaluate(context: TransferContext): Promise<boolean> { if (context.bill.isLocked) { throw new Error('Bill is currently locked in escrow or vault.'); } return true; } }

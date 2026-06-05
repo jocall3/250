@@ -1,0 +1,1 @@
+import axios from 'axios'; export class BepClient { private client = axios.create({ baseURL: 'https://api.bep.gov/v1' }); async getPrintingStatus(batchId: string) { return this.client.get(`/status/${batchId}`); } async getManifest(batchId: string) { return this.client.get(`/manifest/${batchId}`); } }

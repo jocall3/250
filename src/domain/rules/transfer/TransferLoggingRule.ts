@@ -1,0 +1,1 @@
+import { ITransferRule, TransferContext } from '../../types'; export class TransferLoggingRule implements ITransferRule { async evaluate(context: TransferContext): Promise<boolean> { if (!context.payload || !context.payload.ledgerFormatValid) { throw new Error('Transfer payload is not properly formatted for the immutable ledger.'); } return true; } }

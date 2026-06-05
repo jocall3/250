@@ -1,0 +1,1 @@
+export interface VolatilityIndex { assetClass: string; currentVolatility: number; lastUpdated: Date; }

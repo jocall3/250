@@ -1,0 +1,1 @@
+export class MarketplaceFee { constructor(public readonly percentage: number) { if (percentage < 0 || percentage > 100) throw new Error('Fee percentage must be between 0 and 100.'); } public calculate(amount: number): number { return (amount * this.percentage) / 100; } public calculateNet(amount: number): number { return amount - this.calculate(amount); } }

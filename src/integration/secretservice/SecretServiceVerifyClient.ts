@@ -1,0 +1,1 @@
+import axios from 'axios'; export class SecretServiceVerifyClient { private client = axios.create({ baseURL: 'https://verify.secretservice.gov' }); async reportCounterfeit(billId: string, evidence: any) { return this.client.post('/report', { billId, evidence }); } async validateBill(billId: string) { return this.client.get(`/validate/${billId}`); } }

@@ -1,0 +1,1 @@
+import { RuleSet } from './RuleSet'; export class RuleRegistry { private sets = new Map<string, RuleSet>(); register(set: RuleSet) { this.sets.set(set.id, set); } get(id: string): RuleSet { const set = this.sets.get(id); if (!set) throw new Error(`RuleSet ${id} not found`); return set; } }

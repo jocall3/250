@@ -1,0 +1,1 @@
+export interface PriceOracle { getLatestPrice(assetId: string): Promise<number>; }

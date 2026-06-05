@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const databaseErrorParser = (err: any, req: Request, res: Response, next: NextFunction) => { if (err.name === 'QueryFailedError' || err.code?.startsWith('23')) { return res.status(400).json({ success: false, message: 'Database constraint violation' }); } next(err); };

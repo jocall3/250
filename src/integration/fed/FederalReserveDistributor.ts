@@ -1,0 +1,1 @@
+import axios from 'axios'; export class FederalReserveDistributor { private client = axios.create({ baseURL: 'https://fed-vault.reserve.org' }); async requestDistribution(batchId: string, destination: string) { return this.client.post('/distribute', { batchId, destination }); } async getVaultStatus(region: string) { return this.client.get(`/vault/${region}`); } }

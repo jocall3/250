@@ -1,0 +1,1 @@
+export const normalizeError = (err: any) => { if (err.name === 'ValidationError') return { message: err.message, code: 400 }; if (err.code === 'P2002') return { message: 'Conflict: Resource already exists', code: 409 }; return { message: 'An unexpected error occurred', code: 500 }; };

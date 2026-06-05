@@ -1,0 +1,1 @@
+CREATE INDEX idx_serial_status ON bill_ledger(serial_number, status); CREATE INDEX idx_audit_bill_id ON audit_trail(bill_id);

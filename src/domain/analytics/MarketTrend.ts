@@ -1,0 +1,1 @@
+export class MarketTrend { constructor(public readonly id: string, public readonly priceChangePercentage: number, public readonly timestamp: Date) {} }

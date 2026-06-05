@@ -1,0 +1,1 @@
+export interface ValuationEvent { eventType: 'PRICE_CHANGE' | 'APPRAISAL_COMPLETED'; assetId: string; newValue: number; occurredAt: Date; }

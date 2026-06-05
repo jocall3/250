@@ -1,0 +1,1 @@
+export class VelocityMetrics { constructor(public readonly turnoverRate: number, public readonly averageHoldTimeDays: number) {} }

@@ -1,0 +1,1 @@
+export class RedisCacheService { async getBillStatus(serial: string) { /* Rapid lookup */ } async cacheBill(serial: string, data: any) { /* Set with TTL */ } }

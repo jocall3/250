@@ -1,0 +1,1 @@
+import { ITransferRule, TransferContext } from '../../types'; export class ReceiverEligibleRule implements ITransferRule { async evaluate(context: TransferContext): Promise<boolean> { if (!context.receiver.isEligible || context.receiver.kycStatus !== 'VERIFIED') { throw new Error('Receiver is not eligible to hold this asset.'); } return true; } }

@@ -1,0 +1,1 @@
+export interface BillVerificationResponse { billSerialNumber: string; authenticityConfidenceScore: number; status: 'AUTHENTIC' | 'SUSPECT' | 'INVALID'; verificationTimestamp: string; }

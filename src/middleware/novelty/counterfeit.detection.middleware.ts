@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const counterfeitDetectionMiddleware = (req: Request, res: Response, next: NextFunction) => { const { metadata } = req.body; if (!metadata || metadata.origin !== 'OFFICIAL_SMART_CONTRACT') { return res.status(403).json({ error: 'Counterfeit detected: Invalid asset origin.' }); } next(); };

@@ -1,0 +1,1 @@
+export class RuleContext { constructor(public readonly data: Record<string, any>, public readonly metadata: Record<string, any> = {}) {} get(key: string): any { return this.data[key]; } }

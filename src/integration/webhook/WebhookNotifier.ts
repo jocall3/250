@@ -1,0 +1,1 @@
+import axios from 'axios'; export class WebhookNotifier { async notify(endpoint: string, payload: any) { return axios.post(endpoint, payload, { headers: { 'X-Signature': 'sha256-hash' } }); } }

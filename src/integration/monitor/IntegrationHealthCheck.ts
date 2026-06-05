@@ -1,0 +1,1 @@
+export class IntegrationHealthCheck { async check(serviceName: string) { const start = Date.now(); try { await fetch(`https://${serviceName}.gov/health`); return { service: serviceName, latency: Date.now() - start, status: 'UP' }; } catch { return { service: serviceName, status: 'DOWN' }; } } }

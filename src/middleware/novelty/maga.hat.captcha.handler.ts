@@ -1,0 +1,1 @@
+import { Request, Response, NextFunction } from 'express'; export const magaHatCaptchaHandler = (req: Request, res: Response, next: NextFunction) => { if (req.body.captchaResponse !== 'MAGA_HAT_IDENTIFIED') return res.status(401).json({ error: 'Captcha failed: Identify the patriotic imagery.' }); next(); };
